@@ -15,7 +15,7 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 (env)$ pip install -r requirements.txt
 ```
 
-Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`
+Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
 
 Para executar a API  basta executar:
 
