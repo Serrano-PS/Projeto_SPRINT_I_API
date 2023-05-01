@@ -1,0 +1,64 @@
+[2023-04-23 21:59:59,012] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:59:59] "GET /valves HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:00:30,612] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:00:30] "POST /valve HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:00:41,640] WARNING add_valve() L63   Erro ao adicionar válvula 'TESTE', Válvula de mesmo nome já salva na base :/ - call_trace=C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py L63  
+[2023-04-23 22:00:41,642] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:00:41] "[31m[1mPOST /valve HTTP/1.1[0m" 409 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:00:56,629] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:00:56] "POST /valve HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:01:10,726] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:01:10] "GET /valves HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:01:23,925] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:01:23] "DELETE /valve?nome=TESTE HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:01:28,805] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:01:28] "GET /valves HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:37,931] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.9:5000 - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:37,931] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:41,910] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:03:41] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:42,044] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:03:42] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:43,617] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:03:43] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:43,619] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:03:43] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:43,620] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:03:43] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:43,979] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:03:43] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:03:55,340] ERROR log_exception() L1744 Exception on /valve/{valve_id} [PUT] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\scaffold.py", line 273, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: update_valve() missing 1 required positional argument: 'valve_id'
+[2023-04-23 22:03:55,351] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:03:55] "[35m[1mPUT /valve/%7Bvalve_id%7D HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:06:25,434] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.9:5000 - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:06:25,435] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:06:27,454] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:06:27] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:06:27,633] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:06:27] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:06:29,664] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:06:29] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:06:29,666] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:06:29] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:06:29,670] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:06:29] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:06:30,058] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:06:30] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:07:13,985] WARNING update_valve() L167  Válvula não encontrada: 2 - call_trace=C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py L167 
+[2023-04-23 22:07:13,988] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:07:13] "[33mPUT /valve HTTP/1.1[0m" 404 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:07:56,295] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:07:56] "PUT /valve HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:09:40,045] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.9:5000 - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:09:40,045] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 22:09:43,096] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 22:09:43] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 

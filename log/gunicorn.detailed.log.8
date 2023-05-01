@@ -1,0 +1,65 @@
+[2023-04-23 21:34:08,183] ERROR log_exception() L1744 Exception on /valve [DELETE] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2137, in make_response
+    raise TypeError(
+TypeError: The view function for 'del_valve' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-04-23 21:34:08,197] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:08] "[35m[1mDELETE /valve?nome=TESTE HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:29,872] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.9:5000 - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:29,874] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:32,109] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:32] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:32,194] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:32] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:34,393] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:34] "[36mGET /openapi/static/images/rapidoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:34,396] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:34] "[36mGET /openapi/static/images/redoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:34,398] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:34] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:35,099] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:35] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:35,149] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:35] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:35,196] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:35] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:35,198] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:35] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:35,829] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:35] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:45,272] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:45] "POST /valve HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:46,527] WARNING add_valve() L63   Erro ao adicionar válvula 'TESTE', Válvula de mesmo nome já salva na base :/ - call_trace=C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py L63  
+[2023-04-23 21:34:46,530] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:46] "[31m[1mPOST /valve HTTP/1.1[0m" 409 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:34:59,571] ERROR log_exception() L1744 Exception on /valve [DELETE] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2137, in make_response
+    raise TypeError(
+TypeError: The view function for 'del_valve' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-04-23 21:34:59,578] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:34:59] "[35m[1mDELETE /valve?nome=TESTE HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:35:25,589] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:35:25] "POST /valve HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:40:37,163] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.9:5000 - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:40:37,164] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:40:39,514] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:40:39] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:40:39,625] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:40:39] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:40:41,437] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:40:41] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:40:41,478] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:40:41] "[36mGET /openapi/static/images/rapidoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:40:41,480] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:40:41] "[36mGET /openapi/static/images/redoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:41:22,385] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.9:5000 - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:41:22,386] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:41:24,949] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:41:24] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 

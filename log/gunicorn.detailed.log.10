@@ -1,0 +1,60 @@
+[2023-04-23 21:17:39,094] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:41,370] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:41] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:41,524] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:41] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:46,710] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:46] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:47,049] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:47] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:47,068] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:47] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:47,071] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:47] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:47,403] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:47] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:47,510] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:47] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:51,875] WARNING del_valve() L116  Erro ao remover válvula de nome Válvula XXX, Válvula não encontrada. - call_trace=C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py L116 
+[2023-04-23 21:17:51,880] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:51] "[33mDELETE /valve?nome=Válvula%20XXX HTTP/1.1[0m" 404 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:17:52,857] WARNING del_valve() L116  Erro ao remover válvula de nome Válvula XXX, Válvula não encontrada. - call_trace=C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py L116 
+[2023-04-23 21:17:52,859] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:17:52] "[33mDELETE /valve?nome=Válvula%20XXX HTTP/1.1[0m" 404 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:18:25,435] ERROR log_exception() L1744 Exception on /valve [DELETE] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2137, in make_response
+    raise TypeError(
+TypeError: The view function for 'del_valve' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-04-23 21:18:25,441] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:18:25] "[35m[1mDELETE /valve?nome=MVES_70 HTTP/1.1[0m" 500 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:34,252] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.15.9:5000 - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:34,252] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:36,673] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:36] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:36,706] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:36] "GET /openapi/ HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:39,224] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:39] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:39,249] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:39] "[36mGET /openapi/static/images/redoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:39,253] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:39] "[36mGET /openapi/static/images/rapidoc.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:41,565] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:41] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:41,731] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:41] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:41,736] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:41] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:41,739] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:41] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:42,315] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:42] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:21:51,862] WARNING add_valve() L63   Erro ao adicionar válvula 'RETQ408BV', Válvula de mesmo nome já salva na base :/ - call_trace=C:\Users\Pedro Serrano\Dados\Pós\engenharia-de-software-main\MVP\projeto_mvp_1\app.py L63  
+[2023-04-23 21:21:51,864] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:21:51] "[31m[1mPOST /valve HTTP/1.1[0m" 409 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:22:04,411] INFO _log() L224  127.0.0.1 - - [23/Apr/2023 21:22:04] "POST /valve HTTP/1.1" 200 - - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-04-23 21:22:31,898] ERROR log_exception() L1744 Exception on /valve [DELETE] - call_trace=C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py L1744
+Traceback (most recent call last):
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1826, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1845, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Pedro Serrano\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2137, in make_response
+    raise TypeError(
+TypeError: The view function for 'del_valve' did not return a valid response. The function either returned None or ended without a return statement.
